@@ -1,0 +1,16 @@
+h1{
+    color:blue;
+    font-size: 250%; 
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .topnav{
+    overflow: hidden;
+    background-color:#87ceeb;
+  }
+  .logo-img{
+    position:absolute;
+    right:30px;
+    top:30px;
+    margin: 0px 15px 15px 0px;
+    width:40px;
+  }

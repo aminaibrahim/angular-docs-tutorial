@@ -1,0 +1,14 @@
+
+<div class= 'listProduct'  >
+<div *ngIf='products'>
+
+</div>
+
+<div *ngFor='let product of products'>
+   
+ <h4 ><a [routerLink]="['/product',product.id]">{{product.name|uppercase}}</a></h4>
+<h4 *ngIf="product.desc">{{product.desc}}</h4>
+<button (click)="onShareBtn()">Share</button>
+<app-product-alert [price]='product.price' (notify) = 'onNotify()'></app-product-alert>
+</div>
+</div>
